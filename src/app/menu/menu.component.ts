@@ -42,10 +42,11 @@ const DISHES: Dish[] = [
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
-  dishes = DISHES;
-  selectedDish = DISHES[0];
-
-
+  // dishes = DISHES;
+  dishes : Dish[] = DISHES;
+  // selectedDish = DISHES[0];
+  selectedDish : Dish = DISHES[0]
+  
   constructor() { }
 
   ngOnInit(): void {
