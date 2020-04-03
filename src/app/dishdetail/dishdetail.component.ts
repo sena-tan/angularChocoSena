@@ -47,6 +47,7 @@ export class DishdetailComponent implements OnInit {
   dish: Dish;
 
   // dish = DISH;
+  // comments: Dish["comments"];
   comments: Comment;
 
   constructor() { }
