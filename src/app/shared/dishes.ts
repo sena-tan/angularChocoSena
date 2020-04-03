@@ -146,7 +146,7 @@ export const DISHES: Dish[] = [
         ]
     },
     {
-        id: 0,
+        id: 4,
         name: '100% DARK CHOCOLATE',
         image: '/assets/images/totalDark100.png',
         category: 'darks',
