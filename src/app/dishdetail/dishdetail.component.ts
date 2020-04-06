@@ -52,7 +52,6 @@ export class DishdetailComponent implements OnInit {
   // dish = DISH;
   // comments = DISH.comments;
 
-  // comments: Dish["comments"];
   comments: Comment[];
 
   constructor(private dishservice: DishService,
@@ -61,6 +60,7 @@ export class DishdetailComponent implements OnInit {
   ngOnInit() {
     const id = +this.route.snapshot.params['id'];
     this.dish = this.dishservice.getDish(id);
+    this.comments =this.dishservice.getDish(id).comments;
   }
   goBack(): void {
     this.location.back();
